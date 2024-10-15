@@ -82,3 +82,32 @@ public class Main {
         System.out.println("Dados inseridos com sucesso!");
     }
 }
+
+// Main para Listar Estudantes
+/*
+package org.senai;
+
+import org.senai.dao.EstudanteDAO;
+import org.senai.model.Estudante;
+
+import java.sql.SQLException;
+import java.util.List;
+
+public class Main {
+    public static void main(String[] args) {
+        EstudanteDAO estudanteDAO = null;
+        try {
+            estudanteDAO = new EstudanteDAO();
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+
+        // Listar todos os estudantes
+        List<Estudante> estudantes = estudanteDAO.listarTodos();
+        System.out.println("Lista de Estudantes:");
+        for (Estudante estudante : estudantes) {
+            System.out.println("ID: " + estudante.getPessoaId() + ", Matrícula: " + estudante.getMatricula());
+        }
+    }
+}
+*/
